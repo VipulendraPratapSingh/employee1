@@ -11,7 +11,7 @@ import com.emp.demo.exception.EmployeeNotFoundException;
 
 @Service
 public interface EmployeeService {
-	public String addEmployee(Employee employee)throws EmployeeNotFoundException;
+	public Employee addEmployee(Employee employee)throws EmployeeNotFoundException;
 	public Employee getEmployeeById(Long id) throws EmployeeNotFoundException;
 	public String updateEmployee(@PathVariable("id") Long id, @RequestBody Employee employee)throws EmployeeNotFoundException;
 	public List<Employee> getAllEmployee()throws EmployeeNotFoundException;

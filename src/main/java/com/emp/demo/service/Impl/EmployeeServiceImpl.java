@@ -17,9 +17,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private EmployeeRepository employeeReposotory;
 
 	@Override
-	public String addEmployee(Employee employee) {
-		employeeReposotory.save(employee);
-		return "successfully saved";
+	public Employee addEmployee(Employee employee) {
+		return employeeReposotory.save(employee);
 	}
 
 	public Employee getEmployeeById(Long id) throws EmployeeNotFoundException {

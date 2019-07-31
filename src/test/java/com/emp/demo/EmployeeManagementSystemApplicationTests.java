@@ -1,4 +1,4 @@
-package com.emp.demo.EmployeeManagementSystem;
+package com.emp.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
